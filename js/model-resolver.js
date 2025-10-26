@@ -355,10 +355,25 @@ class MinecraftModelResolver {
         if (isPylon) {
             const cleanPath = path.replace('pylon:', '');
             
-            let model = await this.getPylonBlockModel(cleanPath);
+            // 根據路徑判斷是 item 還是 block
+            // machines/pipes/* 是 block
+            // tools/*, combat/*, science/* 等通常是 item
+            const isLikelyBlock = cleanPath.startsWith('machines/');
             
-            if (!model) {
+            let model = null;
+            
+            if (isLikelyBlock) {
+                // 優先嘗試 block
+                model = await this.getPylonBlockModel(cleanPath);
+                if (!model) {
+                    model = await this.getPylonItemModel(cleanPath);
+                }
+            } else {
+                // 優先嘗試 item
                 model = await this.getPylonItemModel(cleanPath);
+                if (!model) {
+                    model = await this.getPylonBlockModel(cleanPath);
+                }
             }
             
             if (model) {

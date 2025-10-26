@@ -4,39 +4,42 @@
 class PylonNav extends HTMLElement {
     connectedCallback() {
         const activePage = this.getAttribute('active') || '';
+        // 判斷是否在首頁（根目錄）
+        const isIndexPage = activePage === 'index';
+        const prefix = isIndexPage ? '' : '../';
         
         this.innerHTML = `
         <aside class="sidebar">
             <div class="sidebar-header">
-                <a href="index.html" class="logo">
+                <a href="${isIndexPage ? './' : '../'}" class="logo">
                     <span class="logo-icon"></span>
                     Pylon Base
                 </a>
             </div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html" ${activePage === 'index' ? 'class="active"' : ''}>首頁</a></li>
+                    <li><a href="${isIndexPage ? './' : '../'}" ${activePage === 'index' ? 'class="active"' : ''}>首頁</a></li>
                     
                     <div class="nav-section">
                         <div class="nav-section-title">內容</div>
                         <li class="sub-menu">
-                            <a href="items.html" ${activePage === 'items' ? 'class="active"' : ''}>物品系統</a>
+                            <a href="${prefix}items/" ${activePage === 'items' ? 'class="active"' : ''}>物品系統</a>
                         </li>
                         <li class="sub-menu">
-                            <a href="machines.html" ${activePage === 'machines' ? 'class="active"' : ''}>機器與多方塊</a>
+                            <a href="${prefix}machines/" ${activePage === 'machines' ? 'class="active"' : ''}>機器與多方塊</a>
                         </li>
                         <li class="sub-menu">
-                            <a href="recipes.html" ${activePage === 'recipes' ? 'class="active"' : ''}>配方系統</a>
+                            <a href="${prefix}recipes/" ${activePage === 'recipes' ? 'class="active"' : ''}>配方系統</a>
                         </li>
                     </div>
                     
                     <div class="nav-section">
                         <div class="nav-section-title">指南</div>
                         <li class="sub-menu">
-                            <a href="guide.html" ${activePage === 'guide' ? 'class="active"' : ''}>玩法指南</a>
+                            <a href="${prefix}guide/" ${activePage === 'guide' ? 'class="active"' : ''}>玩法指南</a>
                         </li>
                         <li class="sub-menu">
-                            <a href="install.html" ${activePage === 'install' ? 'class="active"' : ''}>安裝指南</a>
+                            <a href="${prefix}install/" ${activePage === 'install' ? 'class="active"' : ''}>安裝指南</a>
                         </li>
                     </div>
                 </ul>

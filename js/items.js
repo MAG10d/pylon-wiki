@@ -56,36 +56,18 @@ async function getImageUrl(imagePath, useModelResolver = false) {
     return imagePath;
 }
 
-function renderItemCard(item, imageUrl, fallbackUrl = '', renderType = 'flat', modelData = null) {
-    const actualImageUrl = renderType === 'pylon-3d' && fallbackUrl ? fallbackUrl : imageUrl;
-    
+// 快速渲染卡片（使用佔位符）
+function renderItemCardPlaceholder(item) {
     const safeName = escapeHtml(item.name || '');
     const safeNameEn = escapeHtml(item.nameEn || '');
     const safeDescription = escapeHtml(item.description || '');
     const safeTag = escapeHtml(item.tag || '');
-    const safeImageUrl = escapeHtml(actualImageUrl);
-    const safeFallbackUrl = escapeHtml(fallbackUrl);
-    
-    const errorHandler = fallbackUrl ? `onerror="this.src='${safeFallbackUrl}'"` : '';
-    const dataRenderType = renderType !== 'flat' ? `data-render="${escapeHtml(renderType)}"` : '';
-    
-    let dataModelId = '';
-    if (modelData) {
-        const modelId = `model_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-        window.pylonModelData.set(modelId, modelData);
-        dataModelId = `data-model-id="${modelId}"`;
-    }
     
     return `
-        <div class="item-card">
+        <div class="item-card" data-item-id="${escapeHtml(item.id || '')}">
             <div class="item-card-header">
                 <div class="item-icon">
-                    <img src="${safeImageUrl}" 
-                         alt="${safeNameEn}" 
-                         ${errorHandler}
-                         ${dataRenderType}
-                         ${dataModelId}
-                         class="item-image">
+                    <!-- 空白佔位符 -->
                 </div>
                 <h4>${safeName}<br><small style="color: var(--text-light); font-weight: normal;">${safeNameEn}</small></h4>
             </div>
@@ -95,8 +77,9 @@ function renderItemCard(item, imageUrl, fallbackUrl = '', renderType = 'flat', m
     `;
 }
 
-async function renderCategory(category) {
-    const itemPromises = category.items.map(async item => {
+// 異步載入單個物品的圖片
+async function loadItemImage(card, item) {
+    try {
         const imageUrlResult = await getImageUrl(item.image, true);
         const fallbackUrl = item.fallback ? await getImageUrl(item.fallback, false) : '';
         
@@ -112,18 +95,74 @@ async function renderCategory(category) {
             renderType = 'head';
         }
         
-        return renderItemCard(item, imageUrl, fallbackUrl, renderType, modelData);
-    });
-    
-    const items = await Promise.all(itemPromises);
+        const actualImageUrl = renderType === 'pylon-3d' && fallbackUrl ? fallbackUrl : imageUrl;
+        const safeNameEn = escapeHtml(item.nameEn || '');
+        const safeImageUrl = escapeHtml(actualImageUrl);
+        const safeFallbackUrl = escapeHtml(fallbackUrl);
+        
+        const errorHandler = fallbackUrl ? `onerror="this.src='${safeFallbackUrl}'"` : '';
+        const dataRenderType = renderType !== 'flat' ? `data-render="${escapeHtml(renderType)}"` : '';
+        
+        let dataModelId = '';
+        if (modelData) {
+            const modelId = `model_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+            window.pylonModelData.set(modelId, modelData);
+            dataModelId = `data-model-id="${modelId}"`;
+        }
+        
+        // 替換佔位符為真實圖片
+        const iconDiv = card.querySelector('.item-icon');
+        if (iconDiv) {
+            iconDiv.innerHTML = `
+                <img src="${safeImageUrl}" 
+                     alt="${safeNameEn}" 
+                     ${errorHandler}
+                     ${dataRenderType}
+                     ${dataModelId}
+                     class="item-image"
+                     style="opacity: 0; transition: opacity 0.3s;">
+            `;
+            
+            // 圖片載入後淡入
+            const img = iconDiv.querySelector('img');
+            if (img) {
+                img.onload = () => {
+                    img.style.opacity = '1';
+                };
+                // 如果圖片已經快取，立即顯示
+                if (img.complete) {
+                    img.style.opacity = '1';
+                }
+            }
+        }
+        
+        return { card, renderType, modelData };
+    } catch (error) {
+        console.error('Failed to load item image:', error);
+        return null;
+    }
+}
+
+// 快速渲染分類（帶佔位符）
+function renderCategoryPlaceholder(category) {
     const safeCategoryName = escapeHtml(category.name || '');
+    const placeholderCards = category.items.map(item => renderItemCardPlaceholder(item)).join('');
     
     return `
         <h2><span class="category-badge">${safeCategoryName}</span></h2>
-        <div class="items-grid">
-            ${items.join('')}
+        <div class="items-grid" data-category="${escapeHtml(category.id || '')}">
+            ${placeholderCards}
         </div>
     `;
+}
+
+// 獲取正確的基礎路徑
+function getBasePath() {
+    // 判斷是否在子目錄中
+    const isInSubDir = window.location.pathname.includes('/items/') || 
+                       window.location.pathname.includes('/guide/') ||
+                       window.location.pathname.includes('/machines/');
+    return isInSubDir ? '../' : '';
 }
 
 // 漸進式載入所有物品
@@ -132,15 +171,23 @@ async function loadItems() {
         const container = document.getElementById('items-container');
         if (!container) return;
         
-        container.innerHTML = '';
-        const categoriesResponse = await fetch('data/items/_categories.json');
+        container.innerHTML = '<p style="text-align: center; color: var(--text-light);">正在載入物品...</p>';
+        
+        const basePath = getBasePath();
+        const categoriesResponse = await fetch(`${basePath}data/items/_categories.json`);
         const categoriesData = await categoriesResponse.json();
+        
+        // 第一階段：快速顯示所有卡片框架
+        container.innerHTML = '';
+        const allCategories = [];
         
         for (const file of categoriesData.files) {
             try {
-                const category = await fetch(`data/items/${file}`).then(res => res.json());
-                const html = await renderCategory(category);
+                const category = await fetch(`${basePath}data/items/${file}`).then(res => res.json());
+                allCategories.push(category);
                 
+                // 立即插入帶佔位符的卡片
+                const html = renderCategoryPlaceholder(category);
                 const tempDiv = document.createElement('div');
                 tempDiv.innerHTML = html;
                 
@@ -152,7 +199,27 @@ async function loadItems() {
             }
         }
         
-        setTimeout(() => post3DRender(), 100);
+        // 第二階段：異步載入所有圖片
+        const itemsForRendering = [];
+        
+        for (const category of allCategories) {
+            const cards = container.querySelectorAll(`[data-category="${category.id || ''}"] .item-card`);
+            
+            category.items.forEach((item, index) => {
+                const card = cards[index];
+                if (card) {
+                    // 異步載入圖片，不阻塞後續處理
+                    loadItemImage(card, item).then(result => {
+                        if (result && result.renderType !== 'flat') {
+                            itemsForRendering.push(result);
+                        }
+                    });
+                }
+            });
+        }
+        
+        // 第三階段：等待所有圖片載入後，進行 3D 渲染
+        setTimeout(() => post3DRender(), 500);
     } catch (error) {
         console.error('Failed to load items:', error);
         document.getElementById('items-container').innerHTML = 
