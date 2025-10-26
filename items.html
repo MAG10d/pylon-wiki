@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>物品系統 - Pylon Base</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="items">
+    <!-- Left Sidebar -->
+    <pylon-nav active="items"></pylon-nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="hero">
+            <h1>物品系統</h1>
+            <p>探索 Pylon Base 豐富的物品和材料</p>
+        </div>
+
+        <section>
+            <div class="highlight-box">
+                <p style="text-align: center; color: var(--text-light);">
+                    以下展示 Pylon Base 的主要物品。更多物品請使用遊戲內的 <code>/pylon guide</code> 指令查看。<br>
+                    <small>圖片來源：<a href="https://github.com/pylonmc/pylon-resource-pack" target="_blank" style="color: var(--teal);">Pylon Resource Pack</a></small>
+                </p>
+            </div>
+
+            <div style="margin: 2rem 0; text-align: center;">
+                <input type="text" 
+                       id="search-input" 
+                       placeholder="搜尋物品..." 
+                       style="padding: 0.75rem 1.5rem; border: 2px solid var(--border-color); border-radius: 4px; width: 100%; max-width: 500px; font-size: 1rem;"
+                       onkeyup="searchItems(this.value)">
+            </div>
+            
+            <!-- 物品容器 - 由 JS 动态填充 -->
+            <div id="items-container">
+                <p style="text-align: center; color: var(--text-light);">載入中...</p>
+            </div>
+        </section>
+
+        <pylon-footer></pylon-footer>
+    </div>
+
+    <!-- Web Components -->
+    <script src="js/components.js"></script>
+    
+    <!-- Three.js for 3D rendering (ES Module 版本) -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+        }
+    }
+    </script>
+    <script type="module">
+        import * as THREE from 'three';
+        window.THREE = THREE;
+    </script>
+    
+    <script src="js/model-resolver.js"></script>
+    <script src="js/three-simple-renderer.js"></script>
+    <script src="js/mc-renderer.js"></script>
+    <script src="js/items.js"></script>
+</body>
+</html>

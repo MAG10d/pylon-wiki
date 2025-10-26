@@ -1,0 +1,14 @@
+{
+  "id": "shimmer",
+  "name": "閃光材料",
+  "badge": "魔法",
+  "items": [
+    {"id": "shimmer_dust_1", "name": "閃光粉末 I", "nameEn": "Shimmer Dust I", "description": "在月光下會不自然地閃爍。", "tag": "魔法材料", "image": "pylon:item/resources/shimmer_dust_1.png"},
+    {"id": "shimmer_dust_2", "name": "閃光粉末 II", "nameEn": "Shimmer Dust II", "description": "花香般的紅金色混合物。", "tag": "魔法材料", "image": "pylon:item/resources/shimmer_dust_2.png"},
+    {"id": "shimmer_dust_3", "name": "閃光粉末 III", "nameEn": "Shimmer Dust III", "description": "某種力量將粉塵粒子聚集在一起。", "tag": "魔法材料", "image": "pylon:item/resources/shimmer_dust_3.png"},
+    {"id": "shimmer_skull", "name": "閃光骷髏頭", "nameEn": "Shimmer Skull", "description": "注入閃光粉末的凋零骷髏頭。", "tag": "魔法材料", "image": "minecraft:item/skeleton_skull", "fallback": "minecraft:item/bone.png"},
+    {"id": "reactivated_wither_skull", "name": "重新激活的凋零骷髏", "nameEn": "Reactivated Wither Skull", "description": "右鍵發射凋零骷髏。", "tag": "魔法武器", "image": "minecraft:item/wither_skeleton_skull", "fallback": "minecraft:item/bone.png"},
+    {"id": "hyper_activated_wither_skull", "name": "超級激活的凋零骷髏", "nameEn": "Hyper Activated Wither Skull", "description": "右鍵發射強化凋零骷髏。", "tag": "魔法武器", "image": "minecraft:item/wither_skeleton_skull", "fallback": "minecraft:item/bone.png"},
+    {"id": "fireproof_rune", "name": "防火符文", "nameEn": "Fireproof Rune", "description": "與物品一起丟棄可使物品防火。", "tag": "符文", "image": "minecraft:block/netherrack.png"}
+  ]
+}

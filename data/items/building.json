@@ -1,0 +1,17 @@
+{
+  "id": "building",
+  "name": "建築與雜項",
+  "badge": "建築",
+  "items": [
+    {"id": "compressed_obsidian", "name": "壓縮黑曜石", "nameEn": "Compressed Obsidian", "description": "壓縮的黑曜石，用於高級合成。", "tag": "建築", "image": "minecraft:block/crying_obsidian.png"},
+    {"id": "compressed_wood", "name": "壓縮木頭", "nameEn": "Compressed Wood", "description": "壓縮的木頭，用於各種合成。", "tag": "建築", "image": "minecraft:block/oak_planks.png"},
+    {"id": "enriched_netherrack", "name": "富集地獄岩", "nameEn": "Enriched Netherrack", "description": "燃燒更熱更亮，用於高級配方。", "tag": "材料", "image": "minecraft:block/netherrack.png"},
+    {"id": "dimensional_barrel", "name": "維度桶", "nameEn": "Dimensional Barrel", "description": "利用額外維度存儲更多物品。", "tag": "儲存", "image": "minecraft:block/barrel_bottom.png"},
+    {"id": "pedestal", "name": "基座", "nameEn": "Pedestal", "description": "展示物品，右鍵設置，Shift+右鍵旋轉。", "tag": "裝飾", "image": "minecraft:block/end_rod.png"},
+    {"id": "magic_pedestal", "name": "魔法基座", "nameEn": "Magic Pedestal", "description": "魔法祭壇組件，展示儀式物品。", "tag": "魔法組件", "image": "minecraft:block/end_rod.png"},
+    {"id": "explosive_target", "name": "爆炸標靶", "nameEn": "Explosive Target", "description": "被射擊時爆炸。", "tag": "特殊", "image": "minecraft:block/target_side.png"},
+    {"id": "explosive_target_fiery", "name": "烈焰爆炸標靶", "nameEn": "Fiery Explosive Target", "description": "爆炸並點燃周圍。", "tag": "特殊", "image": "minecraft:block/target_side.png"},
+    {"id": "explosive_target_super", "name": "超級爆炸標靶", "nameEn": "Super Explosive Target", "description": "劇烈爆炸。", "tag": "特殊", "image": "minecraft:block/target_side.png"},
+    {"id": "immobilizer", "name": "定身器", "nameEn": "Immobilizer", "description": "紅石信號觸發，暫時定住範圍內的玩家。", "tag": "特殊", "image": "minecraft:block/redstone_lamp.png"}
+  ]
+}

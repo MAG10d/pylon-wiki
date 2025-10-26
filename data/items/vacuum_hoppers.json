@@ -1,0 +1,11 @@
+{
+  "id": "vacuum_hoppers",
+  "name": "真空漏斗",
+  "badge": "自動化",
+  "items": [
+    {"id": "vacuum_hopper_1", "name": "真空漏斗 I", "nameEn": "Vacuum Hopper I", "description": "吸收範圍內的物品，基礎範圍。", "tag": "自動化", "image": "minecraft:block/hopper_inside.png"},
+    {"id": "vacuum_hopper_2", "name": "真空漏斗 II", "nameEn": "Vacuum Hopper II", "description": "吸收範圍內的物品，中等範圍。", "tag": "自動化", "image": "minecraft:block/hopper_inside.png"},
+    {"id": "vacuum_hopper_3", "name": "真空漏斗 III", "nameEn": "Vacuum Hopper III", "description": "吸收範圍內的物品，大範圍。", "tag": "自動化", "image": "minecraft:block/hopper_inside.png"},
+    {"id": "vacuum_hopper_4", "name": "真空漏斗 IV", "nameEn": "Vacuum Hopper IV", "description": "吸收範圍內的物品，超大範圍。", "tag": "自動化", "image": "minecraft:block/hopper_inside.png"}
+  ]
+}

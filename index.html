@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pylon Base - 全方位 Minecraft 擴展插件</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Left Sidebar -->
+    <pylon-nav active="index"></pylon-nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="hero">
+            <h1>Pylon Base</h1>
+            <p>擴展 Minecraft 原版遊戲體驗的全方位插件</p>
+            <div class="cta-buttons">
+                <a href="install.html" class="btn btn-primary">開始使用</a>
+                <a href="https://discord.gg/4tMAnBAacW" class="btn btn-secondary" target="_blank">加入 Discord</a>
+            </div>
+        </div>
+
+        <section>
+            <h2>什麼是 Pylon？</h2>
+            <p style="font-size: 1.1rem; line-height: 1.8; text-align: center; max-width: 800px; margin: 0 auto;">
+                Pylon 是一款即將推出的 Minecraft Java 插件，將大幅擴展原版遊戲玩法。它提供了新的內容，包括電力機器、大型多方塊結構、
+                完整的流體系統、複雜的冶煉系統、廣泛的自動化選項，以及一個真正好用的研究系統等等。它旨在取代 Slimefun 插件。
+            </p>
+
+            <div class="gallery-grid" style="margin-top: 3rem;">
+                <div class="gallery-item">
+                    <img src="https://cdn.jsdelivr.net/gh/pylonmc/pylon-resource-pack@pack-generator/input/assets/pylonbase/textures/block/machines/simple_machines/grindstone.png" alt="Grindstone">
+                    <div class="gallery-item-name">研磨機</div>
+                </div>
+            <div class="gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/pylonmc/pylon-resource-pack@pack-generator/input/assets/pylonbase/textures/block/machines/simple_machines/mixing_pot_side.png" alt="Mixing Pot">
+                <div class="gallery-item-name">混合鍋</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/pylonmc/pylon-resource-pack@pack-generator/input/assets/pylonbase/textures/block/machines/smeltery/smeltery_controller.png">
+                <div class="gallery-item-name">熔煉爐</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://cdn.jsdelivr.net/gh/pylonmc/pylon-resource-pack@pack-generator/input/assets/pylonbase/textures/block/machines/simple_machines/magic_altar_top.png" alt="Magic Altar">
+                <div class="gallery-item-name">魔法祭壇</div>
+            </div>
+                <div class="gallery-item">
+                    <img src="https://cdn.jsdelivr.net/gh/pylonmc/pylon-resource-pack@pack-generator/input/assets/pylonbase/textures/block/machines/pipes/copper_pipe.png" 
+                         alt="Fluid Pipe"
+                         data-render-3d="pipe"
+                         data-model-path="pylon:machines/pipes/copper_pipe"
+                         onerror="this.src='https://assets.mcasset.cloud/1.21.8/assets/minecraft/textures/block/copper_block.png?height=40'">
+                    <div class="gallery-item-name">流體管道</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://cdn.jsdelivr.net/gh/pylonmc/pylon-resource-pack@pack-generator/input/assets/pylonbase/textures/block/machines/pipes/copper_portable_tank_front.png" 
+                         alt="Fluid Tank"
+                         data-render-3d="tank"
+                         data-model-path="pylon:machines/pipes/portable_fluid_tank_copper"
+                         onerror="this.src='https://assets.mcasset.cloud/1.21.8/assets/minecraft/textures/block/copper_block.png?height=40'">
+                    <div class="gallery-item-name">流體儲罐</div>
+                </div>
+            </div>
+
+            <div class="highlight-box" style="margin-top: 2rem;">
+                <h3>核心優勢</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">插件系統架構，任何人都可以編寫擴展</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">完整的多語言支援，每個玩家可選擇自己的語言</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border-color);">詳細的配置選項，包括每台機器的獨立配置</li>
+                    <li style="padding: 0.5rem 0;">直觀的遊戲內指南系統</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>核心特色</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>研究系統</h3>
+                    <p>使用放大鏡檢查物品獲得研究點數，解鎖新的配方和功能。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>流體系統</h3>
+                    <p>完整的流體管道、儲罐和處理系統。支援多種流體類型。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>冶煉系統</h3>
+                    <p>從原始土窯到大型熔煉爐，體驗真實的金屬加工過程。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>液壓機械</h3>
+                    <p>使用液壓流體驅動的自動化機器，實現全自動生產線。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>多方塊結構</h3>
+                    <p>建造大型多方塊機器，包括熔煉爐、魔法祭壇、淨化塔等。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>魔法系統</h3>
+                    <p>使用閃光粉末和魔法祭壇進行神秘儀式，創造強大物品。</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem; text-align: center;">
+                <h3 style="margin-bottom: 1rem;">探索更多</h3>
+                <div class="cta-buttons">
+                    <a href="items.html" class="btn btn-primary">查看物品</a>
+                    <a href="machines.html" class="btn btn-secondary">查看機器</a>
+                    <a href="recipes.html" class="btn btn-secondary">查看配方</a>
+                </div>
+            </div>
+        </section>
+
+        <pylon-footer></pylon-footer>
+    </div>
+
+    <!-- Web Components -->
+    <script src="js/components.js"></script>
+    
+    <!-- Three.js for 3D rendering (ES Module) -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+        }
+    }
+    </script>
+    <script type="module">
+        import * as THREE from 'three';
+        window.THREE = THREE;
+    </script>
+    <script src="js/model-resolver.js"></script>
+    <script src="js/three-simple-renderer.js"></script>
+    <script src="js/mc-renderer.js"></script>
+    
+    <script>
+        // 首页机器画廊的 3D 渲染
+        async function renderGallery3D() {
+            const images = document.querySelectorAll('img[data-render-3d]');
+            
+            for (const img of images) {
+                const renderType = img.getAttribute('data-render-3d');
+                const modelPath = img.getAttribute('data-model-path');
+                
+                if (!modelPath || typeof modelResolver === 'undefined') continue;
+                
+                try {
+                    // 解析模型（保留 pylon: 前缀）
+                    const resolved = await modelResolver.resolve(modelPath);
+                    if (!resolved || resolved.type !== 'pylon-model') continue;
+                    
+                    const model = resolved.model;
+                    
+                    // 构建贴图 URLs
+                    const textureUrls = {};
+                    if (model.textures) {
+                        Object.entries(model.textures).forEach(([key, value]) => {
+                            if (value.startsWith('pylonbase:')) {
+                                const path = value.replace('pylonbase:', '');
+                                textureUrls[key] = `https://cdn.jsdelivr.net/gh/pylonmc/pylon-resource-pack@pack-generator/input/assets/pylonbase/textures/${path}.png`;
+                            }
+                        });
+                    }
+                    
+                    // 渲染
+                    let rendered;
+                    if (renderType === 'pipe' && window.simpleThreeRenderer) {
+                        rendered = await window.simpleThreeRenderer.renderPipeModel(model, textureUrls, 128);
+                    } else if (renderType === 'tank' && window.simpleThreeRenderer) {
+                        rendered = await window.simpleThreeRenderer.renderPylonModel(model, textureUrls, 128);
+                    }
+                    
+                    if (rendered) {
+                        img.src = rendered;
+                        img.style.imageRendering = 'auto';
+                    }
+                } catch (error) {
+                    console.error('Gallery 3D render failed:', error);
+                }
+            }
+        }
+        
+        // 页面加载后渲染
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => setTimeout(renderGallery3D, 300));
+        } else {
+            setTimeout(renderGallery3D, 300);
+        }
+    </script>
+</body>
+</html>

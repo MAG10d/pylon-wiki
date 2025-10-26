@@ -1,0 +1,11 @@
+{
+  "id": "hammers",
+  "name": "錘子",
+  "badge": "工具",
+  "items": [
+    {"id": "hammer_stone", "name": "石錘", "nameEn": "Stone Hammer", "description": "在石頭方塊上使用，敲擊物品以改變形態。", "tag": "工具", "image": "minecraft:block/stone.png"},
+    {"id": "hammer_iron", "name": "鐵錘", "nameEn": "Iron Hammer", "description": "在鐵方塊上使用，成功率更高。", "tag": "工具", "image": "minecraft:block/iron_block.png"},
+    {"id": "hammer_diamond", "name": "鑽石錘", "nameEn": "Diamond Hammer", "description": "在鑽石方塊上使用，最高成功率。", "tag": "工具", "image": "minecraft:block/diamond_block.png"},
+    {"id": "brick_mold", "name": "磚模", "nameEn": "Brick Mold", "description": "右鍵點擊方塊進行塑形。", "tag": "工具", "image": "minecraft:item/brick.png"}
+  ]
+}

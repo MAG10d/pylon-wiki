@@ -1,0 +1,10 @@
+{
+  "id": "core_chunks",
+  "name": "核心礦塊",
+  "badge": "礦物",
+  "items": [
+    {"id": "shallow_core_chunk", "name": "淺層核心礦塊", "nameEn": "Shallow Core Chunk", "description": "來自地表下方的礦物塊，含有煤、銅、錫。", "tag": "礦物", "image": "minecraft:block/stone.png"},
+    {"id": "subsurface_core_chunk", "name": "地下核心礦塊", "nameEn": "Subsurface Core Chunk", "description": "來自地下的礦物塊，含有煤、銅、錫、鐵。", "tag": "礦物", "image": "minecraft:block/deepslate.png"},
+    {"id": "intermediate_core_chunk", "name": "中層核心礦塊", "nameEn": "Intermediate Core Chunk", "description": "來自深層的礦物塊，含有煤、銅、錫、鐵、金、石膏。", "tag": "礦物", "image": "minecraft:block/tuff.png"}
+  ]
+}

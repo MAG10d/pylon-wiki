@@ -1,0 +1,15 @@
+{
+  "id": "medical",
+  "name": "醫療與消耗品",
+  "badge": "醫療",
+  "items": [
+    {"id": "bandage", "name": "繃帶", "nameEn": "Bandage", "description": "修補瘀傷和傷口，右鍵使用恢復生命值。", "tag": "醫療", "image": "minecraft:item/paper.png"},
+    {"id": "splint", "name": "夾板", "nameEn": "Splint", "description": "緩解較嚴重的傷口，提供更多治療。", "tag": "醫療", "image": "minecraft:item/stick.png"},
+    {"id": "medkit", "name": "醫療包", "nameEn": "Medkit", "description": "移除所有效果並完全治癒使用者。", "tag": "高級醫療", "image": "minecraft:item/potion.png"},
+    {"id": "disinfectant", "name": "消毒劑", "nameEn": "Disinfectant", "description": "化學物質混合物，應用後移除所有效果。", "tag": "醫療", "image": "minecraft:item/glass_bottle.png"},
+    {"id": "cleansing_potion", "name": "淨化藥水", "nameEn": "Cleansing Potion", "description": "立即將殭屍村民變回普通村民，並恢復其生命值。", "tag": "特殊", "image": "minecraft:item/potion.png"},
+    {"id": "health_talisman_simple", "name": "簡單生命護身符", "nameEn": "Simple Health Talisman", "description": "放在物品欄中增加最大生命值。", "tag": "護身符", "image": "pylon:item/combat/health_talisman_simple.png", "fallback": "minecraft:item/totem_of_undying.png"},
+    {"id": "health_talisman_advanced", "name": "高級生命護身符", "nameEn": "Advanced Health Talisman", "description": "放在物品欄中增加更多最大生命值。", "tag": "護身符", "image": "pylon:item/combat/health_talisman_advanced.png", "fallback": "minecraft:item/totem_of_undying.png"},
+    {"id": "health_talisman_ultimate", "name": "終極生命護身符", "nameEn": "Ultimate Health Talisman", "description": "放在物品欄中大幅增加最大生命值。", "tag": "護身符", "image": "pylon:item/combat/health_talisman_ultimate.png", "fallback": "minecraft:item/totem_of_undying.png"}
+  ]
+}

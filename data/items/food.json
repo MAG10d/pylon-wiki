@@ -1,0 +1,11 @@
+{
+  "id": "food",
+  "name": "食物",
+  "badge": "食物",
+  "items": [
+    {"id": "dough", "name": "面團", "nameEn": "Dough", "description": "可用於製作麵包。", "tag": "食物", "image": "minecraft:item/bread.png"},
+    {"id": "flour", "name": "麵粉", "nameEn": "Flour", "description": "研磨小麥獲得，用於製作面團。", "tag": "食物", "image": "minecraft:item/sugar.png"},
+    {"id": "monster_jerky", "name": "怪物肉乾", "nameEn": "Monster Jerky", "description": "比腐肉稍微美味一點，可合成皮革。", "tag": "食物", "image": "minecraft:item/rotten_flesh.png"},
+    {"id": "fiber", "name": "纖維", "nameEn": "Fiber", "description": "研磨線獲得，用於各種合成。", "tag": "材料", "image": "minecraft:item/string.png"}
+  ]
+}

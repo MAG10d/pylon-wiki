@@ -1,0 +1,20 @@
+{
+  "id": "fluid_machines",
+  "name": "流體機械",
+  "badge": "流體機械",
+  "items": [
+    {"id": "water_pump", "name": "水泵", "nameEn": "Water Pump", "description": "無限水源，從下方抽水。", "tag": "流體機械", "image": "minecraft:block/water_still.png"},
+    {"id": "water_placer", "name": "水放置器", "nameEn": "Water Placer", "description": "在前方方塊填充水，需要供水。", "tag": "流體機械", "image": "minecraft:block/water_still.png"},
+    {"id": "lava_placer", "name": "熔岩放置器", "nameEn": "Lava Placer", "description": "在前方方塊填充熔岩，需要供給熔岩。", "tag": "流體機械", "image": "minecraft:block/lava_still.png"},
+    {"id": "water_drainer", "name": "水抽取器", "nameEn": "Water Drainer", "description": "從前方方塊抽取水並供給管道。", "tag": "流體機械", "image": "minecraft:block/water_still.png"},
+    {"id": "lava_drainer", "name": "熔岩抽取器", "nameEn": "Lava Drainer", "description": "從前方方塊抽取熔岩並供給管道。", "tag": "流體機械", "image": "minecraft:block/lava_still.png"},
+    {"id": "fluid_valve", "name": "流體閥門", "nameEn": "Fluid Valve", "description": "右鍵切換開關，控制流體流動。", "tag": "流體控制", "image": "minecraft:block/lever.png"},
+    {"id": "fluid_filter", "name": "流體過濾器", "nameEn": "Fluid Filter", "description": "只允許特定流體通過，右鍵更改過濾流體。", "tag": "流體控制", "image": "minecraft:block/observer_back.png"},
+    {"id": "fluid_meter", "name": "流體流量計", "nameEn": "Fluid Meter", "description": "顯示流經的流體量。", "tag": "流體控制", "image": "minecraft:block/observer_front.png"},
+    {"id": "sprinkler", "name": "噴灑器", "nameEn": "Sprinkler", "description": "加速作物生長，需要管道輸入水。", "tag": "流體機械", "image": "minecraft:block/dispenser_front.png"},
+    {"id": "fluid_strainer", "name": "流體過濾網", "nameEn": "Fluid Strainer", "description": "從流體中過濾物品，右鍵打開物品欄。", "tag": "流體機械", "image": "minecraft:block/iron_bars.png"},
+    {"id": "fluid_voider_1", "name": "流體虛空器 I", "nameEn": "Fluid Voider I", "description": "銷毀所有流入的流體，基礎虛空速率。", "tag": "流體", "image": "minecraft:block/bedrock.png"},
+    {"id": "fluid_voider_2", "name": "流體虛空器 II", "nameEn": "Fluid Voider II", "description": "銷毀所有流入的流體，中等虛空速率。", "tag": "流體", "image": "minecraft:block/bedrock.png"},
+    {"id": "fluid_voider_3", "name": "流體虛空器 III", "nameEn": "Fluid Voider III", "description": "銷毀所有流入的流體，高速虛空速率。", "tag": "流體", "image": "minecraft:block/bedrock.png"}
+  ]
+}

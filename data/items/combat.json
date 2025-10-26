@@ -1,0 +1,12 @@
+{
+  "id": "combat",
+  "name": "戰鬥物品",
+  "badge": "戰鬥",
+  "items": [
+    {"id": "beheading_sword", "name": "砍頭劍", "nameEn": "Beheading Sword", "description": "以不可思議的精確度砍下生物的頭顱。", "tag": "武器", "image": "pylon:item/combat/beheading_sword.png", "fallback": "minecraft:item/iron_sword.png"},
+    {"id": "hydraulic_cannon", "name": "液壓大砲", "nameEn": "Hydraulic Cannon", "description": "使用液壓流體發射錫製彈丸，需在液壓加油站補給。", "tag": "武器", "image": "minecraft:item/bow.png"},
+    {"id": "ice_arrow", "name": "冰箭", "nameEn": "Ice Arrow", "description": "減緩和冰凍敵人。", "tag": "彈藥", "image": "pylon:item/combat/ice_arrow.png", "fallback": "minecraft:item/arrow.png"},
+    {"id": "recoil_arrow", "name": "後座箭", "nameEn": "Recoil Arrow", "description": "發射時會將你向後推，效率75%。", "tag": "彈藥", "image": "pylon:item/combat/recoil_arrow.png", "fallback": "minecraft:item/spectral_arrow.png"},
+    {"id": "tin_projectile", "name": "錫彈丸", "nameEn": "Tin Projectile", "description": "液壓大砲的彈藥。", "tag": "彈藥", "image": "minecraft:item/arrow.png"}
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "files": [
+    "resources.json",
+    "tools.json",
+    "components.json",
+    "dusts.json",
+    "fluid_pipes.json",
+    "portable_tanks.json",
+    "bronze_equipment.json",
+    "combat.json",
+    "medical.json",
+    "shimmer.json",
+    "elevators.json",
+    "vacuum_hoppers.json",
+    "fluid_machines.json",
+    "building.json",
+    "core_chunks.json",
+    "food.json",
+    "hammers.json"
+  ]
+}

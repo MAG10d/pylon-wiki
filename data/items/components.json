@@ -1,0 +1,151 @@
+{
+  "id": "components",
+  "name": "組件與金屬板",
+  "badge": "組件",
+  "items": [
+    {
+      "id": "bronze_sheet",
+      "name": "青銅板",
+      "nameEn": "Bronze Sheet",
+      "description": "用錘子敲擊青銅錠製成，用於製作各種機器。",
+      "tag": "組件",
+      "image": "pylon:item/components/bronze_sheet.png"
+    },
+    {
+      "id": "copper_sheet",
+      "name": "銅板",
+      "nameEn": "Copper Sheet",
+      "description": "用錘子敲擊銅錠製成，用於製作各種機器。",
+      "tag": "組件",
+      "image": "pylon:item/components/copper_sheet.png"
+    },
+    {
+      "id": "iron_sheet",
+      "name": "鐵板",
+      "nameEn": "Iron Sheet",
+      "description": "用錘子敲擊鐵錠製成，用於製作各種機器。",
+      "tag": "組件",
+      "image": "pylon:item/components/iron_sheet.png"
+    },
+    {
+      "id": "steel_sheet",
+      "name": "鋼板",
+      "nameEn": "Steel Sheet",
+      "description": "用錘子敲擊鋼錠製成，用於製作高級機器。",
+      "tag": "組件",
+      "image": "pylon:item/components/steel_sheet.png"
+    },
+    {
+      "id": "gold_sheet",
+      "name": "金板",
+      "nameEn": "Gold Sheet",
+      "description": "用錘子敲擊金錠製成，用於製作特殊機器。",
+      "tag": "組件",
+      "image": "pylon:item/components/gold_sheet.png"
+    },
+    {
+      "id": "tin_sheet",
+      "name": "錫板",
+      "nameEn": "Tin Sheet",
+      "description": "用錘子敲擊錫錠製成，用於製作各種機器。",
+      "tag": "組件",
+      "image": "pylon:item/components/tin_sheet.png"
+    },
+    {
+      "id": "rotor",
+      "name": "轉子",
+      "nameEn": "Rotor",
+      "description": "用於製作液壓馬達等機械組件。",
+      "tag": "組件",
+      "image": "minecraft:item/iron_ingot.png"
+    },
+    {
+      "id": "hydraulic_motor",
+      "name": "液壓馬達",
+      "nameEn": "Hydraulic Motor",
+      "description": "將液壓能量轉換為機械動力。",
+      "tag": "組件",
+      "image": "minecraft:block/piston_side.png"
+    },
+    {
+      "id": "backflow_valve",
+      "name": "止回閥",
+      "nameEn": "Backflow Valve",
+      "description": "防止流體逆流的關鍵組件。",
+      "tag": "組件",
+      "image": "minecraft:block/iron_trapdoor.png"
+    },
+    {
+      "id": "nozzle",
+      "name": "噴嘴",
+      "nameEn": "Nozzle",
+      "description": "用於流體控制和噴射系統。",
+      "tag": "組件",
+      "image": "minecraft:item/iron_ingot.png"
+    },
+    {
+      "id": "filter_mesh",
+      "name": "過濾網",
+      "nameEn": "Filter Mesh",
+      "description": "用於流體過濾系統。",
+      "tag": "組件",
+      "image": "minecraft:block/iron_bars.png"
+    },
+    {
+      "id": "analogue_display",
+      "name": "類比顯示器",
+      "nameEn": "Analogue Display",
+      "description": "顯示類比數據。",
+      "tag": "組件",
+      "image": "minecraft:block/redstone_lamp.png"
+    },
+    {
+      "id": "axle",
+      "name": "軸",
+      "nameEn": "Axle",
+      "description": "機械傳動組件。",
+      "tag": "組件",
+      "image": "minecraft:item/stick.png"
+    },
+    {
+      "id": "weighted_shaft",
+      "name": "加重軸",
+      "nameEn": "Weighted Shaft",
+      "description": "加重的傳動軸。",
+      "tag": "組件",
+      "image": "minecraft:item/iron_ingot.png"
+    },
+    {
+      "id": "sawblade",
+      "name": "鋸片",
+      "nameEn": "Sawblade",
+      "description": "用於製作液壓台鋸的切割組件。",
+      "tag": "組件",
+      "image": "minecraft:item/iron_ingot.png"
+    },
+    {
+      "id": "copper_drill_bit",
+      "name": "銅鑽頭",
+      "nameEn": "Copper Drill Bit",
+      "description": "用於手動鑽機的鑽頭組件。",
+      "tag": "鑽探",
+      "image": "minecraft:item/copper_ingot.png"
+    },
+    {
+      "id": "bronze_drill_bit",
+      "name": "青銅鑽頭",
+      "nameEn": "Bronze Drill Bit",
+      "description": "更耐用的鑽頭。",
+      "tag": "鑽探",
+      "image": "minecraft:item/iron_ingot.png"
+    },
+    {
+      "id": "hydraulic_cannon_chamber",
+      "name": "液壓大砲腔室",
+      "nameEn": "Hydraulic Cannon Chamber",
+      "description": "液壓大砲的組件。",
+      "tag": "組件",
+      "image": "minecraft:item/iron_ingot.png"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "bronze_equipment",
+  "name": "青銅工具裝備",
+  "badge": "裝備",
+  "items": [
+    {"id": "bronze_sword", "name": "青銅劍", "nameEn": "Bronze Sword", "description": "青銅製成的劍，比石劍更耐用。", "tag": "武器", "image": "pylon:item/combat/bronze_sword.png", "fallback": "minecraft:item/iron_sword.png"},
+    {"id": "bronze_pickaxe", "name": "青銅鎬", "nameEn": "Bronze Pickaxe", "description": "青銅製成的鎬，挖掘效率高。", "tag": "工具", "image": "minecraft:item/iron_pickaxe.png"},
+    {"id": "bronze_axe", "name": "青銅斧", "nameEn": "Bronze Axe", "description": "青銅製成的斧頭。", "tag": "工具", "image": "minecraft:item/iron_axe.png"},
+    {"id": "bronze_shovel", "name": "青銅鏟", "nameEn": "Bronze Shovel", "description": "青銅製成的鏟子。", "tag": "工具", "image": "minecraft:item/iron_shovel.png"},
+    {"id": "bronze_hoe", "name": "青銅鋤", "nameEn": "Bronze Hoe", "description": "青銅製成的鋤頭。", "tag": "工具", "image": "minecraft:item/iron_hoe.png"},
+    {"id": "bronze_helmet", "name": "青銅頭盔", "nameEn": "Bronze Helmet", "description": "青銅製成的防具。", "tag": "裝備", "image": "pylon:item/armor/bronze_helmet.png", "fallback": "minecraft:item/iron_helmet.png"},
+    {"id": "bronze_chestplate", "name": "青銅胸甲", "nameEn": "Bronze Chestplate", "description": "青銅製成的胸甲。", "tag": "裝備", "image": "pylon:item/armor/bronze_chestplate.png", "fallback": "minecraft:item/iron_chestplate.png"},
+    {"id": "bronze_leggings", "name": "青銅護腿", "nameEn": "Bronze Leggings", "description": "青銅製成的護腿。", "tag": "裝備", "image": "pylon:item/armor/bronze_leggings.png", "fallback": "minecraft:item/iron_leggings.png"},
+    {"id": "bronze_boots", "name": "青銅靴子", "nameEn": "Bronze Boots", "description": "青銅製成的靴子。", "tag": "裝備", "image": "pylon:item/armor/bronze_boots.png", "fallback": "minecraft:item/iron_boots.png"}
+  ]
+}

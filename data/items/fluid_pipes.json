@@ -1,0 +1,13 @@
+{
+  "id": "fluid_pipes",
+  "name": "流體管道",
+  "badge": "流體",
+  "items": [
+    {"id": "fluid_pipe_wood", "name": "木製流體管道", "nameEn": "Wooden Fluid Pipe", "description": "基礎管道，適用於低溫流體。", "tag": "流體", "image": "pylon:machines/pipes/wood_pipe", "fallback": "pylon:block/machines/pipes/wood_pipe.png"},
+    {"id": "fluid_pipe_copper", "name": "銅製流體管道", "nameEn": "Copper Fluid Pipe", "description": "中等流量和溫度。", "tag": "流體", "image": "pylon:machines/pipes/copper_pipe", "fallback": "pylon:block/machines/pipes/copper_pipe.png"},
+    {"id": "fluid_pipe_tin", "name": "錫製流體管道", "nameEn": "Tin Fluid Pipe", "description": "適用於低溫流體傳輸。", "tag": "流體", "image": "pylon:machines/pipes/tin_pipe", "fallback": "pylon:block/machines/pipes/tin_pipe.png"},
+    {"id": "fluid_pipe_iron", "name": "鐵製流體管道", "nameEn": "Iron Fluid Pipe", "description": "較高流量和溫度。", "tag": "流體", "image": "pylon:machines/pipes/iron_pipe", "fallback": "pylon:block/machines/pipes/iron_pipe.png"},
+    {"id": "fluid_pipe_bronze", "name": "青銅流體管道", "nameEn": "Bronze Fluid Pipe", "description": "高流量管道。", "tag": "流體", "image": "pylon:machines/pipes/bronze_pipe", "fallback": "pylon:block/machines/pipes/bronze_pipe.png"},
+    {"id": "fluid_pipe_steel", "name": "鋼製流體管道", "nameEn": "Steel Fluid Pipe", "description": "高流量，可承受高溫。", "tag": "流體", "image": "pylon:machines/pipes/steel_pipe", "fallback": "pylon:block/machines/pipes/steel_pipe.png"}
+  ]
+}

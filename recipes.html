@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配方系統 - Pylon Base</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="recipes">
+    <!-- Left Sidebar -->
+    <pylon-nav active="recipes"></pylon-nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="hero">
+            <h1>配方系統</h1>
+            <p>探索 Pylon Base 豐富的配方和製作系統</p>
+        </div>
+
+        <section>
+            <p style="text-align: center; margin-bottom: 2rem; font-size: 1.1rem;">
+                Pylon Base 包含多種獨特的配方系統，每種都有其特定的用途和機制。
+            </p>
+
+            <h2><span class="category-badge">研磨配方</span></h2>
+            
+            <div class="recipe-card">
+                <h4>銅粉製作</h4>
+                <div class="recipe-details">
+                    <div class="recipe-input">
+                        <h5>輸入</h5>
+                        <ul>
+                            <li>銅錠 x1</li>
+                        </ul>
+                        <p style="margin-top: 0.5rem;"><strong>研磨次數：</strong> 2次</p>
+                    </div>
+                    <div class="recipe-output">
+                        <h5>輸出</h5>
+                        <ul>
+                            <li>銅粉 x1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <h4>核心礦塊處理</h4>
+                <div class="recipe-details">
+                    <div class="recipe-input">
+                        <h5>輸入</h5>
+                        <ul>
+                            <li>淺層核心礦塊 x1</li>
+                        </ul>
+                        <p style="margin-top: 0.5rem;"><strong>研磨次數：</strong> 6次</p>
+                    </div>
+                    <div class="recipe-output">
+                        <h5>隨機輸出</h5>
+                        <ul>
+                            <li>煤炭（權重0.5）</li>
+                            <li>粗銅（權重0.4）</li>
+                            <li>粗錫（權重0.3）</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h2><span class="category-badge">熔煉爐配方</span></h2>
+            
+            <div class="recipe-card">
+                <h4>青銅合金</h4>
+                <div class="recipe-details">
+                    <div class="recipe-input">
+                        <h5>輸入（流體）</h5>
+                        <ul>
+                            <li>熔融銅：88%</li>
+                            <li>熔融錫：12%</li>
+                        </ul>
+                        <p style="margin-top: 0.5rem;"><strong>溫度：</strong> 950°C</p>
+                    </div>
+                    <div class="recipe-output">
+                        <h5>輸出</h5>
+                        <ul>
+                            <li>熔融青銅：100%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <h4>鋼合金</h4>
+                <div class="recipe-details">
+                    <div class="recipe-input">
+                        <h5>輸入（流體）</h5>
+                        <ul>
+                            <li>熔融鐵：96%</li>
+                            <li>碳漿料：4%</li>
+                        </ul>
+                        <p style="margin-top: 0.5rem;"><strong>溫度：</strong> 1540°C</p>
+                    </div>
+                    <div class="recipe-output">
+                        <h5>輸出</h5>
+                        <ul>
+                            <li>熔融鋼：100%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <h4>鐵冶煉（含副產物）</h4>
+                <div class="recipe-details">
+                    <div class="recipe-input">
+                        <h5>輸入（流體）</h5>
+                        <ul>
+                            <li>粗鐵漿料：100%</li>
+                            <li>碳漿料：50%</li>
+                            <li>硫磺：10%</li>
+                        </ul>
+                        <p style="margin-top: 0.5rem;"><strong>溫度：</strong> 1540°C</p>
+                    </div>
+                    <div class="recipe-output">
+                        <h5>輸出</h5>
+                        <ul>
+                            <li>熔融鐵：100%</li>
+                            <li>漿料：40%</li>
+                            <li>熔融鈷：10%</li>
+                            <li>熔融鎳：10%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h2><span class="category-badge">錘擊配方</span></h2>
+            
+            <div class="recipe-card">
+                <h4>金屬板製作</h4>
+                <p>將金屬錠放在對應的方塊上，使用錘子敲擊可製作金屬板。</p>
+                <div class="recipe-details">
+                    <div class="recipe-input">
+                        <h5>示例</h5>
+                        <ul>
+                            <li>銅錠 → 銅板</li>
+                            <li>鐵錠 → 鐵板</li>
+                            <li>金錠 → 金板</li>
+                        </ul>
+                    </div>
+                    <div class="recipe-output">
+                        <h5>注意</h5>
+                        <p>更高級的錘子有更高的成功率。</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2><span class="category-badge">魔法祭壇配方</span></h2>
+            
+            <div class="recipe-card">
+                <h4>閃光物品製作</h4>
+                <p>在8個基座上放置特定物品，使用催化劑激活祭壇進行儀式。</p>
+                <div class="multiblock-requirements" style="background: rgba(108, 77, 170, 0.1); padding: 1rem; margin-top: 1rem;">
+                    <p><strong>儀式過程：</strong></p>
+                    <ul style="list-style: none; padding-left: 1rem;">
+                    <li>將所需物品放置在8個魔法基座上</li>
+                    <li>使用催化劑右鍵點擊中央的魔法祭壇</li>
+                    <li>等待儀式完成</li>
+                    <li>收集製作完成的物品</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2><span class="category-badge">混合鍋配方</span></h2>
+            
+            <div class="recipe-card">
+                <h4>物品混合</h4>
+                <p>將多種物品放入混合鍋中，下方放置火源，右鍵點擊混合。</p>
+                <div class="multiblock-requirements" style="background: rgba(230, 126, 34, 0.1); padding: 1rem; margin-top: 1rem;">
+                    <p><strong>要點：</strong></p>
+                    <ul style="list-style: none; padding-left: 1rem;">
+                    <li>普通火源適用於基礎配方</li>
+                    <li>富集地獄岩火焰適用於高級配方</li>
+                    <li>也可作為普通煉藥鍋使用</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2><span class="category-badge">其他配方類型</span></h2>
+            
+            <div class="items-grid" style="margin-top: 1rem;">
+                <div class="item-card">
+                    <h4>壓榨配方</h4>
+                    <p>使用壓力機將植物壓榨成植物油，用於液壓系統。</p>
+                </div>
+                <div class="item-card">
+                    <h4>管道彎曲配方</h4>
+                    <p>使用液壓管道彎曲機高效製作各種流體管道。</p>
+                </div>
+                <div class="item-card">
+                    <h4>台鋸配方</h4>
+                    <p>使用液壓台鋸將原木切成木板，木板切成木棒。</p>
+                </div>
+                <div class="item-card">
+                    <h4>塑形配方</h4>
+                    <p>使用磚模對方塊進行塑形，創造特殊形狀。</p>
+                </div>
+                <div class="item-card">
+                    <h4>土窯配方</h4>
+                    <p>使用土窯進行原始的高溫冶煉，製作基礎材料。</p>
+                </div>
+                <div class="item-card">
+                    <h4>澆鑄配方</h4>
+                    <p>在熔煉爐中將熔融金屬澆鑄成各種形狀的物品。</p>
+                </div>
+            </div>
+        </section>
+
+        <pylon-footer></pylon-footer>
+    </div>
+
+    <!-- Web Components -->
+    <script src="js/components.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,199 @@
+{
+  "id": "resources",
+  "name": "資源與材料",
+  "badge": "資源",
+  "items": [
+    {
+      "id": "bronze_ingot",
+      "name": "青銅錠",
+      "nameEn": "Bronze Ingot",
+      "description": "由銅和錫合金製成，是早期發展的重要材料。",
+      "tag": "合金",
+      "image": "pylon:item/resources/bronze_ingot.png"
+    },
+    {
+      "id": "bronze_nugget",
+      "name": "青銅粒",
+      "nameEn": "Bronze Nugget",
+      "description": "九個可合成一個青銅錠。",
+      "tag": "合金",
+      "image": "pylon:item/resources/bronze_nugget.png"
+    },
+    {
+      "id": "bronze_block",
+      "name": "青銅塊",
+      "nameEn": "Bronze Block",
+      "description": "九個青銅錠合成的儲存方塊。",
+      "tag": "合金",
+      "image": "pylon:block/resources/bronze_block.png"
+    },
+    {
+      "id": "steel_ingot",
+      "name": "鋼錠",
+      "nameEn": "Steel Ingot",
+      "description": "通過鐵和碳漿在高溫下冶煉而成，比鐵更堅固。",
+      "tag": "高級材料",
+      "image": "pylon:item/resources/steel_ingot.png"
+    },
+    {
+      "id": "steel_nugget",
+      "name": "鋼粒",
+      "nameEn": "Steel Nugget",
+      "description": "九個可合成一個鋼錠。",
+      "tag": "高級材料",
+      "image": "pylon:item/resources/steel_nugget.png"
+    },
+    {
+      "id": "steel_block",
+      "name": "鋼塊",
+      "nameEn": "Steel Block",
+      "description": "九個鋼錠合成的儲存方塊。",
+      "tag": "高級材料",
+      "image": "pylon:block/resources/steel_block.png"
+    },
+    {
+      "id": "tin_ingot",
+      "name": "錫錠",
+      "nameEn": "Tin Ingot",
+      "description": "由粗錫冶煉而成。",
+      "tag": "金屬",
+      "image": "pylon:item/resources/tin_ingot.png"
+    },
+    {
+      "id": "tin_nugget",
+      "name": "錫粒",
+      "nameEn": "Tin Nugget",
+      "description": "九個可合成一個錫錠。",
+      "tag": "金屬",
+      "image": "pylon:item/resources/tin_nugget.png"
+    },
+    {
+      "id": "tin_block",
+      "name": "錫塊",
+      "nameEn": "Tin Block",
+      "description": "九個錫錠合成的儲存方塊。",
+      "tag": "金屬",
+      "image": "pylon:block/resources/tin_block.png"
+    },
+    {
+      "id": "raw_tin",
+      "name": "粗錫",
+      "nameEn": "Raw Tin",
+      "description": "新增的礦石資源，用於製作青銅和各種管道。",
+      "tag": "礦石",
+      "image": "pylon:item/resources/raw_tin.png"
+    },
+    {
+      "id": "nickel_ingot",
+      "name": "鎳錠",
+      "nameEn": "Nickel Ingot",
+      "description": "稀有金屬，可從鐵礦冶煉的副產物中獲得。",
+      "tag": "稀有材料",
+      "image": "pylon:item/resources/nickel_ingot.png"
+    },
+    {
+      "id": "nickel_nugget",
+      "name": "鎳粒",
+      "nameEn": "Nickel Nugget",
+      "description": "九個可合成一個鎳錠。",
+      "tag": "稀有材料",
+      "image": "pylon:item/resources/nickel_nugget.png"
+    },
+    {
+      "id": "nickel_block",
+      "name": "鎳塊",
+      "nameEn": "Nickel Block",
+      "description": "九個鎳錠合成的儲存方塊。",
+      "tag": "稀有材料",
+      "image": "pylon:block/resources/nickel_block.png"
+    },
+    {
+      "id": "cobalt_ingot",
+      "name": "鈷錠",
+      "nameEn": "Cobalt Ingot",
+      "description": "稀有金屬，可從鐵礦冶煉的副產物中獲得。",
+      "tag": "稀有材料",
+      "image": "pylon:item/resources/cobalt_ingot.png"
+    },
+    {
+      "id": "cobalt_nugget",
+      "name": "鈷粒",
+      "nameEn": "Cobalt Nugget",
+      "description": "九個可合成一個鈷錠。",
+      "tag": "稀有材料",
+      "image": "pylon:item/resources/cobalt_nugget.png"
+    },
+    {
+      "id": "cobalt_block",
+      "name": "鈷塊",
+      "nameEn": "Cobalt Block",
+      "description": "九個鈷錠合成的儲存方塊。",
+      "tag": "稀有材料",
+      "image": "pylon:block/resources/cobalt_block.png"
+    },
+    {
+      "id": "igneous_composite",
+      "name": "火成複合材料",
+      "nameEn": "Igneous Composite",
+      "description": "一種堅硬耐用的材料，能承受極高溫度，防凋零。",
+      "tag": "特殊材料",
+      "image": "minecraft:block/obsidian.png"
+    },
+    {
+      "id": "crushed_raw_copper",
+      "name": "粉碎粗銅",
+      "nameEn": "Crushed Raw Copper",
+      "description": "粉碎的粗銅，更易處理。",
+      "tag": "礦石",
+      "image": "pylon:item/resources/crushed_raw_copper.png"
+    },
+    {
+      "id": "crushed_raw_iron",
+      "name": "粉碎粗鐵",
+      "nameEn": "Crushed Raw Iron",
+      "description": "粉碎的粗鐵，更易處理。",
+      "tag": "礦石",
+      "image": "pylon:item/resources/crushed_raw_iron.png"
+    },
+    {
+      "id": "crushed_raw_gold",
+      "name": "粉碎粗金",
+      "nameEn": "Crushed Raw Gold",
+      "description": "粉碎的粗金，更易處理。",
+      "tag": "礦石",
+      "image": "pylon:item/resources/crushed_raw_gold.png"
+    },
+    {
+      "id": "crushed_raw_tin",
+      "name": "粉碎粗錫",
+      "nameEn": "Crushed Raw Tin",
+      "description": "粉碎的粗錫，更易處理。",
+      "tag": "礦石",
+      "image": "pylon:item/resources/crushed_raw_tin.png"
+    },
+    {
+      "id": "obsidian_chip",
+      "name": "黑曜石碎片",
+      "nameEn": "Obsidian Chip",
+      "description": "黑曜石的碎片。",
+      "tag": "材料",
+      "image": "pylon:item/resources/obsidian_chip.png"
+    },
+    {
+      "id": "covalent_binder",
+      "name": "共價粘合劑",
+      "nameEn": "Covalent Binder",
+      "description": "一種膠狀物質，在手中變形和反彈。",
+      "tag": "材料",
+      "image": "pylon:item/resources/covalent_binder.png"
+    },
+    {
+      "id": "portability_catalyst",
+      "name": "便攜催化劑",
+      "nameEn": "Portability Catalyst",
+      "description": "用於製作便攜物品。",
+      "tag": "材料",
+      "image": "minecraft:item/ender_pearl.png"
+    }
+  ]
+}

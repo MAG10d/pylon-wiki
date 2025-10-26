@@ -1,0 +1,143 @@
+{
+  "id": "dusts",
+  "name": "粉末與材料",
+  "badge": "粉末",
+  "items": [
+    {
+      "id": "bronze_dust",
+      "name": "青銅粉",
+      "nameEn": "Bronze Dust",
+      "description": "研磨青銅錠獲得，用於特殊合成。",
+      "tag": "粉末",
+      "image": "pylon:item/resources/bronze_dust.png"
+    },
+    {
+      "id": "copper_dust",
+      "name": "銅粉",
+      "nameEn": "Copper Dust",
+      "description": "研磨銅錠或粗銅獲得。",
+      "tag": "粉末",
+      "image": "pylon:item/resources/copper_dust.png"
+    },
+    {
+      "id": "iron_dust",
+      "name": "鐵粉",
+      "nameEn": "Iron Dust",
+      "description": "研磨鐵錠或粗鐵獲得。",
+      "tag": "粉末",
+      "image": "pylon:item/resources/iron_dust.png"
+    },
+    {
+      "id": "gold_dust",
+      "name": "金粉",
+      "nameEn": "Gold Dust",
+      "description": "研磨金錠或粗金獲得。",
+      "tag": "粉末",
+      "image": "pylon:item/resources/gold_dust.png"
+    },
+    {
+      "id": "steel_dust",
+      "name": "鋼粉",
+      "nameEn": "Steel Dust",
+      "description": "研磨鋼錠獲得。",
+      "tag": "粉末",
+      "image": "pylon:item/resources/steel_dust.png"
+    },
+    {
+      "id": "tin_dust",
+      "name": "錫粉",
+      "nameEn": "Tin Dust",
+      "description": "研磨錫錠或粗錫獲得。",
+      "tag": "粉末",
+      "image": "pylon:item/resources/tin_dust.png"
+    },
+    {
+      "id": "nickel_dust",
+      "name": "鎳粉",
+      "nameEn": "Nickel Dust",
+      "description": "研磨鎳錠獲得。",
+      "tag": "粉末",
+      "image": "pylon:item/resources/nickel_dust.png"
+    },
+    {
+      "id": "cobalt_dust",
+      "name": "鈷粉",
+      "nameEn": "Cobalt Dust",
+      "description": "研磨鈷錠獲得。",
+      "tag": "粉末",
+      "image": "pylon:item/resources/cobalt_dust.png"
+    },
+    {
+      "id": "coal_dust",
+      "name": "煤粉",
+      "nameEn": "Coal Dust",
+      "description": "研磨煤炭獲得。",
+      "tag": "粉末",
+      "image": "pylon:item/resources/coal_dust.png"
+    },
+    {
+      "id": "rock_dust",
+      "name": "石粉",
+      "nameEn": "Rock Dust",
+      "description": "研磨岩石材料獲得，用於各種配方。",
+      "tag": "粉末",
+      "image": "pylon:item/resources/rock_dust.png"
+    },
+    {
+      "id": "quartz_dust",
+      "name": "石英粉",
+      "nameEn": "Quartz Dust",
+      "description": "研磨石英獲得。",
+      "tag": "粉末",
+      "image": "pylon:item/resources/quartz_dust.png"
+    },
+    {
+      "id": "diamond_dust",
+      "name": "鑽石粉",
+      "nameEn": "Diamond Dust",
+      "description": "研磨鑽石獲得。",
+      "tag": "粉末",
+      "image": "pylon:item/resources/diamond_dust.png"
+    },
+    {
+      "id": "emerald_dust",
+      "name": "綠寶石粉",
+      "nameEn": "Emerald Dust",
+      "description": "研磨綠寶石獲得。",
+      "tag": "粉末",
+      "image": "pylon:item/resources/emerald_dust.png"
+    },
+    {
+      "id": "carbon",
+      "name": "碳",
+      "nameEn": "Carbon",
+      "description": "從煤炭中提煉，用於製作鋼。",
+      "tag": "材料",
+      "image": "pylon:item/resources/carbon.png"
+    },
+    {
+      "id": "sulfur",
+      "name": "硫磺",
+      "nameEn": "Sulfur",
+      "description": "從紅石漿料中提取，用於冶煉過程。",
+      "tag": "材料",
+      "image": "pylon:item/resources/sulfur.png"
+    },
+    {
+      "id": "gypsum",
+      "name": "石膏",
+      "nameEn": "Gypsum",
+      "description": "來自核心礦塊的稀有礦物。",
+      "tag": "材料",
+      "image": "pylon:item/resources/gypsum.png"
+    },
+    {
+      "id": "gypsum_dust",
+      "name": "石膏粉",
+      "nameEn": "Gypsum Dust",
+      "description": "研磨石膏獲得。",
+      "tag": "粉末",
+      "image": "pylon:item/resources/gypsum_dust.png"
+    }
+  ]
+}

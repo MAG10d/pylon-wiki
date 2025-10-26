@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>機器與多方塊 - Pylon Base</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="machines">
+    <!-- Left Sidebar -->
+    <pylon-nav active="machines"></pylon-nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="hero">
+            <h1>機器與多方塊結構</h1>
+            <p>建造強大的機器系統，實現自動化生產</p>
+        </div>
+
+        <section>
+            <h2><span class="category-badge">簡單機器</span></h2>
+            
+            <div class="multiblock-card">
+                <h4>研磨機 (Grindstone)</h4>
+                <p>將礦石和材料磨成粉末，是處理原材料的基礎機器。</p>
+                <div class="multiblock-requirements">
+                    <strong>所需組件：</strong>
+                    <ul>
+                        <li>1x 研磨機</li>
+                        <li>1x 研磨機手柄</li>
+                    </ul>
+                    <strong>使用方法：</strong>
+                    <p>右鍵點擊放入物品，右鍵點擊手柄開始研磨。</p>
+                </div>
+            </div>
+
+            <div class="multiblock-card">
+                <h4>混合鍋 (Mixing Pot)</h4>
+                <p>在鍋中放入物品並混合，需要下方有火源。某些配方需要富集地獄岩火焰。</p>
+                <div class="multiblock-requirements">
+                    <strong>使用方法：</strong>
+                    <ul>
+                        <li>將物品放入鍋中</li>
+                        <li>確保下方有火源</li>
+                        <li>右鍵點擊混合</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="multiblock-card">
+                <h4>壓力機 (Press)</h4>
+                <p>將植物壓榨成植物油，是液壓系統的燃料來源。</p>
+                <div class="multiblock-requirements">
+                    <strong>使用方法：</strong>
+                    <ul>
+                        <li>投入植物材料</li>
+                        <li>右鍵點擊開始壓榨</li>
+                        <li>收集植物油用於液壓系統</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="multiblock-card">
+                <h4>錘子系統 (Hammer)</h4>
+                <p>將物品放在特定方塊上，使用錘子敲擊以改變其形態。</p>
+                <div class="multiblock-requirements">
+                    <strong>錘子類型：</strong>
+                    <ul>
+                        <li>石錘 - 在石頭方塊上使用</li>
+                        <li>鐵錘 - 在鐵方塊上使用（成功率更高）</li>
+                        <li>鑽石錘 - 在鑽石方塊上使用（最高成功率）</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="category-badge">流體系統</span></h2>
+            
+            <div class="multiblock-card">
+                <h4>流體管道 (Fluid Pipes)</h4>
+                <p>連接機器和儲罐的管道系統，不同材質有不同的流量和耐溫性。</p>
+                <div class="multiblock-requirements">
+                    <strong>管道類型：</strong>
+                    <ul>
+                        <li>木製流體管道 - 基礎管道，低溫流體</li>
+                        <li>銅製流體管道 - 中等流量和溫度</li>
+                        <li>青銅流體管道 - 較高流量</li>
+                        <li>鋼製流體管道 - 高流量和高溫</li>
+                        <li>火成複合流體管道 - 最高流量和極高溫度</li>
+                    </ul>
+                    <strong>使用方法：</strong>
+                    <p>右鍵點擊連接點、另一根管道或方塊開始放置。</p>
+                </div>
+            </div>
+
+            <div class="multiblock-card">
+                <h4>流體儲罐 (Fluid Tank)</h4>
+                <p>多方塊流體存儲系統，可堆疊增加容量。</p>
+                <div class="multiblock-requirements">
+                    <strong>所需組件：</strong>
+                    <ul>
+                        <li>1x 流體儲罐（底座）</li>
+                        <li>1個或多個流體儲罐外殼（堆疊向上）</li>
+                        <li>所有外殼必須是同一材質</li>
+                    </ul>
+                    <strong>儲罐外殼類型：</strong>
+                    <ul>
+                        <li>木製 - 基礎容量</li>
+                        <li>銅製 - 中等容量</li>
+                        <li>青銅製 - 較大容量</li>
+                        <li>鋼製 - 大容量</li>
+                        <li>火成複合 - 最大容量，可承受極高溫度</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="multiblock-card">
+                <h4>噴灑器 (Sprinkler)</h4>
+                <p>自動灌溉農作物，大幅加速作物生長。</p>
+                <div class="multiblock-requirements">
+                    <strong>功能：</strong>
+                    <ul>
+                        <li>加速作物、樹苗、甘蔗和仙人掌生長</li>
+                        <li>需要通過管道輸入水</li>
+                        <li>有作用範圍限制</li>
+                        <li>不能在指定範圍內放置多個噴灑器</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="category-badge">冶煉系統</span></h2>
+            
+            <div class="multiblock-card">
+                <h4>土窯 (Pit Kiln)</h4>
+                <p>原始且低效的高溫冶煉方法，是冶煉系統的起點。</p>
+                <div class="multiblock-requirements">
+                    <strong>所需組件：</strong>
+                    <ul>
+                        <li>1x 土窯</li>
+                        <li>8x 煤炭塊</li>
+                        <li>20x 粗泥土</li>
+                        <li>1x 營火/火焰/魂火營火/魂火（速度不同）</li>
+                        <li>9x 灰化土/粗泥土（產量不同）</li>
+                    </ul>
+                    <strong>使用方法：</strong>
+                    <ul>
+                        <li>右鍵點擊插入物品</li>
+                        <li>完成多方塊結構並放入有效配方開始冶煉</li>
+                        <li>破壞以取回物品</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="multiblock-card">
+                <h4>熔煉爐 (Smeltery)</h4>
+                <p>大型多方塊高溫冶煉系統，是進行複雜合金冶煉的核心設施。</p>
+                <div class="multiblock-requirements">
+                    <strong>所需組件：</strong>
+                    <ul>
+                        <li>1x 熔煉爐控制器</li>
+                        <li>1個或多個熔煉爐輸入艙口</li>
+                        <li>1個或多個熔煉爐輸出艙口</li>
+                        <li>1個或多個熔煉爐漏斗</li>
+                        <li>1個或多個熔煉爐澆鑄器</li>
+                        <li>1個或多個熔煉爐燃燒器</li>
+                        <li>25個或更多耐火磚（取決於尺寸和組件）</li>
+                    </ul>
+                    <strong>結構：</strong>
+                    <ul>
+                        <li>在5x5方形的邊緣中心放置控制器</li>
+                        <li>下方需要5x5的熔煉爐組件地板</li>
+                        <li>可擴展為更大的結構以增加容量</li>
+                    </ul>
+                    <strong>功能：</strong>
+                    <ul>
+                        <li>熔化礦石和金屬</li>
+                        <li>製作合金（如青銅、鋼等）</li>
+                        <li>澆鑄成錠、塊或其他形狀</li>
+                        <li>處理漿料和液體材料</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="category-badge">液壓機械</span></h2>
+            
+            <div class="multiblock-card">
+                <h4>液壓自動化系統</h4>
+                <p>使用液壓流體和植物油驅動的自動化機器系統。</p>
+                <div class="multiblock-requirements">
+                    <strong>液壓系統組件：</strong>
+                    <ul>
+                        <li>液壓研磨機轉盤 - 自動轉動研磨機</li>
+                        <li>液壓混合附件 - 自動混合鍋</li>
+                        <li>液壓壓力活塞 - 自動壓力機</li>
+                        <li>液壓錘頭 - 自動錘子</li>
+                        <li>液壓管道彎曲機 - 高效製作管道</li>
+                        <li>液壓台鋸 - 高效切割木材</li>
+                        <li>液壓農場 - 自動收割和種植作物</li>
+                        <li>液壓挖掘機 - 挖掘泥土、沙子等方塊</li>
+                    </ul>
+                    <strong>能源循環：</strong>
+                    <ul>
+                        <li>使用壓力機從植物中提取植物油</li>
+                        <li>植物油轉化為液壓流體</li>
+                        <li>液壓機器使用後產生髒液壓流體</li>
+                        <li>使用淨化塔淨化髒液壓流體</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="multiblock-card">
+                <h4>太陽能淨化塔 (Solar Purification Tower)</h4>
+                <p>使用太陽能將髒液壓流體轉化回液壓流體。</p>
+                <div class="multiblock-requirements">
+                    <strong>等級與組件：</strong>
+                    <ul>
+                        <li>I級 - 16x 太陽能透鏡</li>
+                        <li>II級 - 48x 太陽能透鏡</li>
+                        <li>III級 - 96x 太陽能透鏡</li>
+                        <li>IV級 - 160x 太陽能透鏡</li>
+                        <li>V級 - 240x 太陽能透鏡</li>
+                    </ul>
+                    <ul>
+                        <li>1x 淨化塔頂蓋</li>
+                        <li>3x 淨化塔玻璃</li>
+                    </ul>
+                    <strong>特性：</strong>
+                    <ul>
+                        <li>僅在白天工作</li>
+                        <li>下雨/下雪時速度降低</li>
+                        <li>等級越高，淨化速度和效率越高</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="multiblock-card">
+                <h4>煤炭淨化塔 (Coal-fired Purification Tower)</h4>
+                <p>使用煤炭或木炭作為燃料淨化髒液壓流體，可全天候工作。</p>
+                <div class="multiblock-requirements">
+                    <strong>所需組件：</strong>
+                    <ul>
+                        <li>1x 煤炭淨化塔</li>
+                        <li>1x 淨化塔頂蓋</li>
+                        <li>5x 淨化塔玻璃</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="multiblock-card">
+                <h4>鑽機系統 (Core Drill)</h4>
+                <p>用於開採地下礦物的鑽機系統。</p>
+                <div class="multiblock-requirements">
+                    <strong>鑽機類型：</strong>
+                    <ul>
+                        <li>手動鑽機 - 開採淺層核心礦塊</li>
+                        <li>改良手動鑽機 - 開採地下核心礦塊</li>
+                        <li>液壓鑽機 - 開採中層核心礦塊（需液壓流體）</li>
+                    </ul>
+                    <strong>核心礦塊：</strong>
+                    <ul>
+                        <li>淺層核心礦塊 - 含有煤、銅、錫</li>
+                        <li>地下核心礦塊 - 含有煤、銅、錫、鐵</li>
+                        <li>中層核心礦塊 - 含有煤、銅、錫、鐵、金、石膏</li>
+                    </ul>
+                    <p>將核心礦塊放入研磨機中可獲得隨機礦物資源。</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="category-badge">魔法系統</span></h2>
+            
+            <div class="multiblock-card">
+                <h4>魔法祭壇 (Magic Altar)</h4>
+                <p>進行閃光儀式的獨立結構，創造強大的魔法物品。</p>
+                <div class="multiblock-requirements">
+                    <strong>所需組件：</strong>
+                    <ul>
+                        <li>1x 魔法祭壇</li>
+                        <li>8x 魔法基座</li>
+                    </ul>
+                    <strong>使用方法：</strong>
+                    <ul>
+                        <li>在8個基座上放置物品（右鍵點擊設置，Shift+右鍵旋轉）</li>
+                        <li>使用催化劑右鍵點擊魔法祭壇開始儀式</li>
+                        <li>等待儀式完成</li>
+                    </ul>
+                    <strong>可製作物品：</strong>
+                    <ul>
+                        <li>閃光骷髏頭</li>
+                        <li>重新激活的凋零骷髏</li>
+                        <li>超級激活的凋零骷髏</li>
+                        <li>各種魔法強化物品</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="category-badge">其他結構</span></h2>
+            
+            <div class="multiblock-card">
+                <h4>電梯 (Elevator)</h4>
+                <p>快速在垂直方向移動。</p>
+                <div class="multiblock-requirements">
+                    <strong>等級：</strong>
+                    <ul>
+                        <li>電梯 I - 短距離垂直移動</li>
+                        <li>電梯 II - 中距離垂直移動</li>
+                        <li>電梯 III - 長距離垂直移動</li>
+                    </ul>
+                    <strong>使用方法：</strong>
+                    <p>潛行下降，跳躍上升。</p>
+                </div>
+            </div>
+
+            <div class="multiblock-card">
+                <h4>定身器 (Immobilizer)</h4>
+                <p>利用背景閃光能量暫時固定範圍內的玩家。</p>
+                <div class="multiblock-requirements">
+                    <strong>特性：</strong>
+                    <ul>
+                        <li>由紅石信號觸發</li>
+                        <li>有作用半徑和持續時間</li>
+                        <li>有冷卻時間</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <pylon-footer></pylon-footer>
+    </div>
+
+    <!-- Web Components -->
+    <script src="js/components.js"></script>
+</body>
+</html>

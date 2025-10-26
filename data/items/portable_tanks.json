@@ -1,0 +1,13 @@
+{
+  "id": "portable_tanks",
+  "name": "便攜流體儲罐",
+  "badge": "流體儲存",
+  "items": [
+    {"id": "portable_fluid_tank_wood", "name": "木製便攜流體罐", "nameEn": "Wooden Portable Fluid Tank", "description": "可放置並連接管道，破壞時保留內容物。", "tag": "流體", "image": "pylon:machines/pipes/portable_fluid_tank_wood", "fallback": "pylon:block/machines/pipes/wood_portable_tank_front.png"},
+    {"id": "portable_fluid_tank_copper", "name": "銅製便攜流體罐", "nameEn": "Copper Portable Fluid Tank", "description": "中等容量，可承受較高溫度。", "tag": "流體", "image": "pylon:machines/pipes/portable_fluid_tank_copper", "fallback": "pylon:block/machines/pipes/copper_portable_tank_front.png"},
+    {"id": "portable_fluid_tank_tin", "name": "錫製便攜流體罐", "nameEn": "Tin Portable Fluid Tank", "description": "基礎容量，適用於低溫流體。", "tag": "流體", "image": "pylon:machines/pipes/portable_fluid_tank_tin", "fallback": "pylon:block/machines/pipes/tin_portable_tank_front.png"},
+    {"id": "portable_fluid_tank_iron", "name": "鐵製便攜流體罐", "nameEn": "Iron Portable Fluid Tank", "description": "較大容量，耐高溫。", "tag": "流體", "image": "pylon:machines/pipes/portable_fluid_tank_iron", "fallback": "pylon:block/machines/pipes/iron_portable_tank_front.png"},
+    {"id": "portable_fluid_tank_bronze", "name": "青銅便攜流體罐", "nameEn": "Bronze Portable Fluid Tank", "description": "高容量流體儲存。", "tag": "流體", "image": "pylon:machines/pipes/portable_fluid_tank_bronze", "fallback": "pylon:block/machines/pipes/bronze_portable_tank_front.png"},
+    {"id": "portable_fluid_tank_steel", "name": "鋼製便攜流體罐", "nameEn": "Steel Portable Fluid Tank", "description": "大容量，可承受極高溫度。", "tag": "流體", "image": "pylon:machines/pipes/portable_fluid_tank_steel", "fallback": "pylon:block/machines/pipes/steel_portable_tank_front.png"}
+  ]
+}

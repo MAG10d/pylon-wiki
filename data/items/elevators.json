@@ -1,0 +1,10 @@
+{
+  "id": "elevators",
+  "name": "電梯系列",
+  "badge": "建築",
+  "items": [
+    {"id": "elevator_1", "name": "電梯 I", "nameEn": "Elevator I", "description": "潛行下降，跳躍上升。短距離垂直移動。", "tag": "建築", "image": "minecraft:block/white_wool.png"},
+    {"id": "elevator_2", "name": "電梯 II", "nameEn": "Elevator II", "description": "潛行下降，跳躍上升。中距離垂直移動。", "tag": "建築", "image": "minecraft:block/light_gray_wool.png"},
+    {"id": "elevator_3", "name": "電梯 III", "nameEn": "Elevator III", "description": "潛行下降，跳躍上升。長距離垂直移動。", "tag": "建築", "image": "minecraft:block/gray_wool.png"}
+  ]
+}

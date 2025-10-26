@@ -1,0 +1,92 @@
+{
+  "id": "tools",
+  "name": "特殊工具",
+  "badge": "工具",
+  "items": [
+    {
+      "id": "lumber_axe",
+      "name": "伐木斧",
+      "nameEn": "Lumber Axe",
+      "description": "一次砍倒整棵樹，提高伐木效率。",
+      "tag": "工具",
+      "image": "pylon:item/tools/lumber_axe.png",
+      "fallback": "minecraft:item/iron_axe.png"
+    },
+    {
+      "id": "climbing_pick",
+      "name": "攀爬鎬",
+      "nameEn": "Climbing Pick",
+      "description": "右鍵點擊方塊抓住它，雙擊跳躍推開。",
+      "tag": "特殊工具",
+      "image": "minecraft:item/iron_pickaxe.png"
+    },
+    {
+      "id": "watering_can",
+      "name": "澆水壺",
+      "nameEn": "Watering Can",
+      "description": "加速作物、樹苗、甘蔗和仙人掌的生長。",
+      "tag": "農業",
+      "image": "minecraft:item/bucket.png"
+    },
+    {
+      "id": "loupe",
+      "name": "放大鏡",
+      "nameEn": "Loupe",
+      "description": "檢查物品以獲得研究點數，物品越稀有可檢查次數越多。",
+      "tag": "科學",
+      "image": "pylon:item/science/loupe.png",
+      "fallback": "minecraft:item/spyglass.png"
+    },
+    {
+      "id": "research_pack_1",
+      "name": "研究包 I",
+      "nameEn": "Research Pack I",
+      "description": "右鍵開啟獲得研究點數，有冷卻時間。",
+      "tag": "科學",
+      "image": "pylon:item/science/research_pack_1.png",
+      "fallback": "minecraft:item/book.png"
+    },
+    {
+      "id": "research_pack_2",
+      "name": "研究包 II",
+      "nameEn": "Research Pack II",
+      "description": "右鍵開啟獲得更多研究點數，有冷卻時間。",
+      "tag": "科學",
+      "image": "pylon:item/science/research_pack_2.png",
+      "fallback": "minecraft:item/enchanted_book.png"
+    },
+    {
+      "id": "portable_crafting_table",
+      "name": "便攜工作台",
+      "nameEn": "Portable Crafting Table",
+      "description": "右鍵打開合成介面。",
+      "tag": "便攜",
+      "image": "minecraft:block/crafting_table_front.png"
+    },
+    {
+      "id": "portable_dustbin",
+      "name": "便攜垃圾桶",
+      "nameEn": "Portable Dustbin",
+      "description": "右鍵打開垃圾桶。",
+      "tag": "便攜",
+      "image": "minecraft:item/lava_bucket.png"
+    },
+    {
+      "id": "portable_ender_chest",
+      "name": "便攜終界箱",
+      "nameEn": "Portable Ender Chest",
+      "description": "右鍵打開終界箱。",
+      "tag": "便攜",
+      "image": "minecraft:entity/chest/ender.png"
+    },
+    {
+      "id": "confetti_popper",
+      "name": "彩紙禮炮",
+      "nameEn": "Confetti Popper",
+      "description": "長按右鍵發射彩紙！",
+      "tag": "娛樂",
+      "image": "pylon:tools/confetti_popper",
+      "fallback": "pylon:item/tools/confetti_popper.png"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安裝指南 - Pylon Base</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="install">
+    <!-- Left Sidebar -->
+    <pylon-nav active="install"></pylon-nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="hero">
+            <h1>安裝指南</h1>
+            <p>快速開始使用 Pylon Base</p>
+        </div>
+
+        <section>
+            <h2>安裝步驟</h2>
+            
+            <ol class="install-steps">
+                <li>
+                    <strong>前置要求</strong>
+                    <p>確保您的伺服器運行 Paper 或其分支（如 Purpur）。建議使用 Minecraft 1.20.1 或更高版本。</p>
+                </li>
+                <li>
+                    <strong>下載 Pylon Core</strong>
+                    <p>Pylon Base 需要 Pylon Core 插件作為基礎。請先從官方網站下載最新版本的 Pylon Core。</p>
+                </li>
+                <li>
+                    <strong>下載 Pylon Base</strong>
+                    <p>從 GitHub Releases 頁面下載最新版本的 Pylon Base JAR 文件。</p>
+                </li>
+                <li>
+                    <strong>安裝插件</strong>
+                    <p>將 Pylon Core 和 Pylon Base 的 JAR 文件放入伺服器的 <code>plugins</code> 資料夾中。</p>
+                </li>
+                <li>
+                    <strong>重啟伺服器</strong>
+                    <p>重啟您的 Minecraft 伺服器以載入插件。</p>
+                </li>
+                <li>
+                    <strong>配置插件</strong>
+                    <p>首次啟動後，插件會在 <code>plugins/PylonBase</code> 資料夾中生成配置文件。您可以根據需要調整配置。</p>
+                </li>
+                <li>
+                    <strong>開始遊戲</strong>
+                    <p>進入遊戲後，使用命令 <code>/pylon</code> 打開插件指南，開始您的 Pylon 之旅！</p>
+                </li>
+            </ol>
+
+            <div class="highlight-box" style="margin-top: 2rem; text-align: center;">
+                <h3>遊戲內指南</h3>
+                <p style="font-size: 1.1rem; color: var(--text-light);">
+                    Pylon Base 包含完整的遊戲內指南系統！<br>
+                    使用 <code>/pylon guide</code> 命令可隨時查看所有物品、配方和機器的詳細信息。
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>配置說明</h2>
+            
+            <div class="multiblock-card">
+                <h4>主配置文件</h4>
+                <p>位於 <code>plugins/PylonBase/config.yml</code></p>
+                <div class="multiblock-requirements">
+                    <strong>主要配置項：</strong>
+                    <ul>
+                        <li>語言設定 - 選擇插件語言</li>
+                        <li>研究系統 - 調整研究點數獲取</li>
+                        <li>機器設定 - 每台機器的效率和消耗</li>
+                        <li>流體系統 - 管道流量和溫度限制</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="multiblock-card">
+                <h4>配方自訂</h4>
+                <p>位於 <code>plugins/PylonBase/recipes/</code></p>
+                <div class="multiblock-requirements">
+                    <strong>可自訂的配方：</strong>
+                    <ul>
+                        <li>研磨配方 - 調整輸入輸出比例</li>
+                        <li>熔煉爐配方 - 修改合金比例和溫度</li>
+                        <li>機器配方 - 自訂處理時間和消耗</li>
+                        <li>魔法配方 - 調整儀式需求</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <pylon-footer></pylon-footer>
+    </div>
+
+    <!-- Web Components -->
+    <script src="js/components.js"></script>
+</body>
+</html>
