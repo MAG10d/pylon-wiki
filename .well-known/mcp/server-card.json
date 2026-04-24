@@ -1,0 +1,24 @@
+{
+  "serverInfo": {
+    "name": "pylon-wiki-mcp",
+    "version": "1.0.0"
+  },
+  "transports": [
+    {
+      "type": "http",
+      "endpoint": "https://pylon-wiki.lgls.xyz/mcp"
+    }
+  ],
+  "capabilities": {
+    "resources": {
+      "subscribe": false,
+      "listChanged": false
+    },
+    "tools": {
+      "listChanged": false
+    },
+    "prompts": {
+      "listChanged": false
+    }
+  }
+}

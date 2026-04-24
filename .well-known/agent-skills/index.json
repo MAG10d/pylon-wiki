@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "api-discovery",
+      "type": "skill-md",
+      "description": "Discover API metadata endpoints and auth discovery documents for pylon-wiki.",
+      "url": "/.well-known/agent-skills/api-discovery/SKILL.md",
+      "digest": "sha256:9828591d8ddc709a011cab1d8b9fe66b78e084c07b040c5df3e763f014220c06"
+    },
+    {
+      "name": "markdown-access",
+      "type": "skill-md",
+      "description": "Request markdown-rendered content from HTML pages using Accept negotiation.",
+      "url": "/.well-known/agent-skills/markdown-access/SKILL.md",
+      "digest": "sha256:2b5f9f8ec2576a14ec7af7626da565398fe5c77153d1c1c46fcb5dfdfd1f1e2e"
+    }
+  ]
+}

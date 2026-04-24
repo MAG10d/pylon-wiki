@@ -1,0 +1,40 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Pylon Wiki Site Metadata API",
+    "version": "1.0.0",
+    "description": "Minimal OpenAPI description for machine-discoverable status metadata endpoints."
+  },
+  "servers": [
+    {
+      "url": "https://pylon-wiki.lgls.xyz"
+    }
+  ],
+  "paths": {
+    "/status/health.json": {
+      "get": {
+        "summary": "Site health status",
+        "responses": {
+          "200": {
+            "description": "Healthy",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "status"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
