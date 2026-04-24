@@ -1,0 +1,16 @@
+{
+  "keys": [
+    {
+      "kty": "EC",
+      "x": "1IG7KJxC3ZuE2FG0yecOZ7R9wX49cNjXaZe1bAYh_7A",
+      "y": "n-yoVQMvm8fCZScRDQJ-yZSBj7WWr3ZmZmgr_xhllaI",
+      "crv": "P-256",
+      "kid": "pylon-wiki-web-bot-auth-2026-04",
+      "use": "sig",
+      "alg": "ES256",
+      "key_ops": [
+        "verify"
+      ]
+    }
+  ]
+}
