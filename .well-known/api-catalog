@@ -1,0 +1,25 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://pylon-wiki.lgls.xyz/",
+      "service-desc": [
+        {
+          "href": "https://pylon-wiki.lgls.xyz/openapi.json",
+          "type": "application/openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://pylon-wiki.lgls.xyz/guide/",
+          "type": "text/html"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://pylon-wiki.lgls.xyz/status/health.json",
+          "type": "application/json"
+        }
+      ]
+    }
+  ]
+}

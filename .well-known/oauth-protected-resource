@@ -1,0 +1,9 @@
+{
+  "resource": "https://pylon-wiki.lgls.xyz/",
+  "authorization_servers": [
+    "https://pylon-wiki.lgls.xyz"
+  ],
+  "scopes_supported": [
+    "api.read"
+  ]
+}
