@@ -74,3 +74,84 @@ class PylonFooter extends HTMLElement {
 
 customElements.define('pylon-nav', PylonNav);
 customElements.define('pylon-footer', PylonFooter);
+// WebMCP: expose core site actions to compatible AI agents in the browser.
+function initWebMCP() {
+    const modelContext = navigator.modelContext;
+    if (!modelContext || typeof modelContext.provideContext !== 'function') {
+        return;
+    }
+
+    const tools = [
+        {
+            name: 'navigate_site_section',
+            description: 'Navigate the browser to a major Pylon Wiki section.',
+            inputSchema: {
+                type: 'object',
+                properties: {
+                    section: {
+                        type: 'string',
+                        enum: ['home', 'guide', 'install', 'items', 'machines', 'recipes'],
+                        description: 'Target section to open.'
+                    }
+                },
+                required: ['section'],
+                additionalProperties: false
+            },
+            execute: async ({ section }) => {
+                const routes = {
+                    home: '/',
+                    guide: '/guide/',
+                    install: '/install/',
+                    items: '/items/',
+                    machines: '/machines/',
+                    recipes: '/recipes/'
+                };
+
+                const targetPath = routes[section] || '/';
+                const targetUrl = new URL(targetPath, window.location.origin).toString();
+                window.location.href = targetUrl;
+
+                return {
+                    success: true,
+                    message: `Navigated to ${section}`,
+                    url: targetUrl
+                };
+            }
+        },
+        {
+            name: 'get_site_metadata',
+            description: 'Return discovery metadata endpoints exposed by this site.',
+            inputSchema: {
+                type: 'object',
+                properties: {},
+                additionalProperties: false
+            },
+            execute: async () => {
+                const base = window.location.origin;
+                return {
+                    baseUrl: base,
+                    endpoints: {
+                        apiCatalog: `${base}/.well-known/api-catalog`,
+                        openidConfiguration: `${base}/.well-known/openid-configuration`,
+                        oauthAuthorizationServer: `${base}/.well-known/oauth-authorization-server`,
+                        oauthProtectedResource: `${base}/.well-known/oauth-protected-resource`,
+                        mcpServerCard: `${base}/.well-known/mcp/server-card.json`,
+                        skillsIndex: `${base}/.well-known/agent-skills/index.json`,
+                        robots: `${base}/robots.txt`,
+                        sitemap: `${base}/sitemap.xml`
+                    }
+                };
+            }
+        }
+    ];
+
+    modelContext.provideContext({ tools }).catch((error) => {
+        console.warn('WebMCP provideContext failed:', error);
+    });
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initWebMCP, { once: true });
+} else {
+    initWebMCP();
+}
